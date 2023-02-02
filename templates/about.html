@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/app.css') }}"
+    />
+
     <title>My Website - About</title>
   </head>
   <body>
@@ -17,5 +22,9 @@
       scenarios. With my dedication and drive, I am well on my way to a
       successful career in computer science.
     </p>
+    <img
+      src="{{ url_for('static', filename=images/pic_of_woman.jpg) }}"
+      alt="picture of a woman"
+    />
   </body>
 </html>
